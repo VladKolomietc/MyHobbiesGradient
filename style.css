@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lobster&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+body {
+    background: linear-gradient( to left, rgb(209, 150, 249) , rgb(151, 151, 245), rgb(248, 165, 179));
+}
+.menu {   
+    display: flex;
+    justify-content: space-around; 
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgb(170, 170, 170);
+    height: 75px;
+    width: 60%;
+    background: rgb(135,135,139);
+    background: linear-gradient(90deg, rgb(255, 198, 251) 0%, rgb(255, 255, 255) 35%, rgba(228, 164, 255, 0.456) 100%);
+    padding: ;
+}
+.url {
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(0, 0, 0);
+}
+.stay {
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(251, 127, 220);
+}
+.url::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 30px;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+.url:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+a {
+    text-decoration: none;
+  }
+.block {
+    width: 300px;
+    height: 400px;
+    margin: 50px;
+}
+.Photo {
+    display: flex;
+    justify-content: space-between;
+}
+.image {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+.block_text{
+    font-family: 'Sofia Sans Semi Condensed', sans-serif; 
+}
+.Info_text {
+    font-size: 15px;
+    font-family: 'Kanit', cursive;
+}
+.info {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 120px;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgb(173, 173, 173) 0%, rgb(253, 180, 229) 100%);
+    margin-top: 50vh;
+}
+.git {
+    width: 40px;
+    height: 40px;
+}
+.you{
+    margin-left: 30px;
+    width: 30px;
+    height: 30px;
+}
+.Info_text:nth-of-type(2) {
+    margin-left: 10px;
+}
